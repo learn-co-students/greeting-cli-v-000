@@ -1,7 +1,7 @@
 require_relative "../lib/greeting.rb"
 
 describe './bin/greet executing a CLI Application' do
-    it 'Hi! I'm HAL, what's your name?' do
+    it "Hi! I'm HAL, what's your name?" do
     allow($stdout).to receive(:puts)
     allow(self).to receive(:gets).and_return("Don")
 
