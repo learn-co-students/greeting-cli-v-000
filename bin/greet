@@ -1,4 +1,14 @@
 #!/usr/bin/env ruby
 require_relative "../lib/greeting.rb"
-
+puts "Hi! I'm HAL, what's your name?"
+name = gets.strip
+greeting(name)
 # code your CLI here!
+
+=begin
+rspec ./spec/02_cli_spec.rb:4 # ./bin/greet executing a CLI Application outputs a welcome message and asks the user for input
+rspec ./spec/02_cli_spec.rb:13 # ./bin/greet executing a CLI Application uses #gets.strip to capture the user input and set it equal to a variable called name
+rspec ./spec/02_cli_spec.rb:22 # ./bin/greet executing a CLI Application calls on the #greeting method with an argument of the user's name
+rspec ./spec/02_cli_spec.rb:31 # ./bin/greet executing a CLI Application calls on the #greeting method with an argument of the user's name and returns the new greeting,
+interpolating the user's name
+=end
