@@ -2,3 +2,9 @@
 require_relative "../lib/greeting.rb"
 
 # code your CLI here!
+
+puts "Hi! I'm HAL, what's your name?"
+name = gets.strip
+allow(self).to receive(:gets).and_return("Don")
+
+greeting(name)
