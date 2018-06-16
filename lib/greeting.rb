@@ -1,4 +1,3 @@
-# code the #greeting method here!
-def greeting(name)
-  puts "Hello #{name}. It's nice to meet you."
-end
+def greeting(name) # define greeting method which takes an argument of "name"
+  print "Hello #{name}. It's nice to meet you." #use string interpolation
+end 
