@@ -8,4 +8,15 @@ name = gets.strip
 
 puts greeting(name)
 
-end
+puts "How old are you?"
+
+age = gets.strip
+
+puts age_reply(age)
+
+puts "Where are you from?"
+
+location = gets.strip
+
+puts location_reply(location)
+
