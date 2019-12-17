@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 require_relative "../lib/greeting.rb"
 
-# code your CLI here!
+puts "Hi! welcome to my Greeting CLI Lab test."
+puts "Please enter your name so that I can greet you more personally:"
+name = gets.chomp.strip
+greeting(name)
