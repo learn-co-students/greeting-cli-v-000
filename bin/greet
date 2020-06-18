@@ -2,3 +2,21 @@
 require_relative "../lib/greeting.rb"
 
 # code your CLI here!
+puts "Hi! I'm HAL, what's your name?"
+
+name = gets.strip
+
+puts greeting(name)
+
+puts "How old are you?"
+
+age = gets.strip
+
+puts age_reply(age)
+
+puts "Where are you from?"
+
+location = gets.strip
+
+puts location_reply(location)
+
