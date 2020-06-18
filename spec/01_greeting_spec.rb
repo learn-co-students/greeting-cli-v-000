@@ -1,4 +1,6 @@
-require_relative "../lib/greeting.rb"
+require_relative "../lib/greeting.rb" #test for the code in the lib directory
+#in this 01_greeting_spec file; and tests for the CLI (user interaction portion)
+#of our app in the spec/02_cli_spec.rb file
 
 describe './lib/greeting.rb' do
   it 'defines a greeting method' do
@@ -8,7 +10,7 @@ describe './lib/greeting.rb' do
   context '#greeting' do
     it 'takes in an argument of a persons name' do
       allow($stdout).to receive(:puts)
-      
+
       expect{greeting("Bobby")}.to_not raise_error
     end
 

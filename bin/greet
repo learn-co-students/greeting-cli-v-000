@@ -1,4 +1,15 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby <-- any executable file placed in bin need to begin w/'shebang line'
+#shebang line tells terminal which interpreter to use to execute the remainder of file
+# this file responsible for running the program, contains code that enacts command line interaction
+
 require_relative "../lib/greeting.rb"
 
+#here we require the greeting.rb file from w/in lib directory.
+#This gives our executable file access to whatever code we write in that lib file
+#our executable file requires the files in lib directory and uses that code to enact the CLI
+#define methods/classes in lib
+
 # code your CLI here!
+puts "Hi! I'm HAL, what's your name?"
+name = gets.strip   #capture the input using #gets. The .strip removes leading and trailing whitespaces.
+greeting(name)     #Here we are passing user's input into #greeting method as an argument
