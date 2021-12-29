@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require_relative "../lib/car.rb"
+#vehicle_one = Vehicle.new
+
+#vehicle_one.manufacturer = gets.strip
+#vehicle_one.make_it_rain
+#vehicle.make_car_beep
+
+
+car = Car.new
+puts "what is the manufacturer of the car?"
+car.manufacturer = gets.strip
+car.make_it_snow

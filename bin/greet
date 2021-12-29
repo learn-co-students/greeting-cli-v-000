@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require_relative "../lib/greeting.rb"
-require_relative "../lib/car.rb"
+
 
 
 # code your CLI here!
@@ -9,7 +9,3 @@ name=gets.strip
 puts "and adjective?"
 adjective=gets.strip
 greeting(name: name, adjective: adjective)
-vehicle = Vehicle.new
-vehicle.make_car_beep
-car = Car.new
-car.make_car_beep
