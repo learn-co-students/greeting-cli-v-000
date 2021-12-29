@@ -11,3 +11,9 @@ car = Car.new
 puts "what is the manufacturer of the car?"
 car.manufacturer = gets.strip
 car.make_it_snow
+car.hazard
+
+car_two = Car.new
+puts "what is the manufacturer of the second car?"
+car_two.manufacturer = gets.strip
+Car.heavy_traffic
